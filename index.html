@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css">
+	<link rel="stylesheet" href="css/Control.OSMGeocoder.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -120,7 +121,6 @@ var baseMaps = {"OpenStreetMap": osm,"Grayscale": grayscale};
         map.getPane('pane_carte_index_poly_dissolved_ordered_1').style.zIndex = 401;
         map.getPane('pane_carte_index_poly_dissolved_ordered_1').style['mix-blend-mode'] = 'normal';
         var layer_carte_index_poly_dissolved_ordered_1 = new L.geoJson(json_carte_index_poly_dissolved_ordered_1, {
-            attribution: '<a href=""></a>',
             pane: 'pane_carte_index_poly_dissolved_ordered_1',
             onEachFeature: pop_carte_index_poly_dissolved_ordered_1,
             style: style_carte_index_poly_dissolved_ordered_1_0,
