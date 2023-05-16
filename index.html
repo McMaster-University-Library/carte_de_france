@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css">
-	<link rel="stylesheet" href="css/Control.OSMGeocoder.css">
+		<link rel="stylesheet" href="css/Control.OSMGeocoder.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -55,8 +55,8 @@
 		var osm = L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 	maxZoom: 28});
-var grayscale = L.tileLayer('http://www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
-	attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+var grayscale = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
+	attribution: '&copy;Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
 	maxZoom: 28});
 
 var baseMaps = {"OpenStreetMap": osm,"Grayscale": grayscale};
@@ -107,14 +107,14 @@ var baseMaps = {"OpenStreetMap": osm,"Grayscale": grayscale};
             return {
                 pane: 'pane_carte_index_poly_dissolved_ordered_1',
                 opacity: 1,
-                color: 'rgba(147,22,40,0.4)',
+                color: 'rgba(147,22,40,0.5)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 1.0, 
+                weight: 2.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(241,244,199,0.4)',
+                fillColor: 'rgba(241,244,199,0.5)',
             }
         }
         map.createPane('pane_carte_index_poly_dissolved_ordered_1');
